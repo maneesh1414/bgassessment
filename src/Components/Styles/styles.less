@@ -1,0 +1,36 @@
+// out: ./styles.css, compress: true
+
+.Navbar {
+  background-color: #ffaa81;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  height: 80px;
+   &HomeLink,&TeamLink,&AboutLink{
+     padding: 10px 30px;;
+   }
+   &HomeLink{
+     padding-left: 80px;
+     &Img{
+       margin-top: 20px;
+     }
+   }
+   &TeamLink,&AboutLink{
+     font-family: 'Poppins', sans-serif;
+     font-size: 18px;
+     color: #ffffff;
+     text-decoration: none;
+   }
+   &LinkText{
+     color: #645f5f;
+   }
+}
+
+
+.vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
