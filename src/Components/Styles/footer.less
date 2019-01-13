@@ -1,0 +1,98 @@
+// out: ./footer.css, compress: true
+
+.footer{
+    background-color: #645f5f;
+    height: 350px;
+    padding: 80px 0px;
+    &Left{
+      width: 30%;
+      float: left;
+      clear: left;
+      padding: 0px 80px;
+      &Heading{
+        color: #ffffff;
+        margin: 0px;
+      }
+      &Text{
+        color: #ffaa81;
+        padding-right: 80px;
+        margin: 0px;
+      }
+    }
+    &Right{
+      width: 70%;
+      float: left;
+      text-align: center;
+      &InputName, &InputEmail, &InputMessage {
+        border-top: none;
+        border-bottom:1px solid #ABA8A8;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500px;
+        background-color: inherit;
+        padding: 8px 2px;
+        color: #ffaa81;
+      }
+      &InputName{
+        margin: 0px 10px;
+      }
+      &InputEmail{
+        margin: 0px 5px;
+      }
+      &InputMessage{
+        width: 490px;
+      }
+    }
+    &Bottom{
+      margin-top: 50px;
+      padding: 0px 80px;
+      float: left;
+      clear: left;
+      &Copyright{
+        display: inline;
+        color: #e5e9e1;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 500px;
+      }
+    }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #e5e9e1;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #e5e9e1;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #e5e9e1;
+}
+
+.Button{
+  border: none;
+  background-color: inherit;
+  color: #ffaa81;
+  cursor: pointer;
+  transition: 0.3s all;
+  outline: none;
+  &:hover{
+    transition: 0.3s all;
+    color: #ffffff;
+  }
+  &Arrow{
+    display: inline-block;
+  }
+}
+
+
+.Button:hover .ButtonArrow{
+  transition: 0.3s all;
+  transform: rotateZ(90deg);
+}

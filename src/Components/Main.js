@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar.js';
-import './Styles/styles.css';
-
+import Content from './Content.js';
+import Footer from './Footer.js';
 
 export default class Main extends Component{
 
@@ -12,8 +12,11 @@ export default class Main extends Component{
           <Navbar />
         </header>
         <main>
-
+          <Content />
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }

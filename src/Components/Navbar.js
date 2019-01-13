@@ -1,7 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import crouton from './Images/crouton.png';
-import './Styles/styles.css';
+import './Styles/navbar.css';
 import About from './About.js';
 import Team from './Team.js';
 

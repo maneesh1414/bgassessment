@@ -1,0 +1,94 @@
+// out: ./content.css, compress: true
+
+.Content{
+  &Part{
+    background-color: #ffaa81;
+    padding-top: 90px;
+    height: 450px;
+
+    &Img{
+      position: absolute;
+      top: 120px;
+      left: 800px;
+    }
+
+    &Link{
+      text-decoration: none;
+      display: block;
+      padding: 30px 0px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 500px;
+      letter-spacing: 0.1em;
+      color: #645f5f;
+      transition: 0.3s all;
+      &Sub{
+        display: inline-block;
+      }
+      &:hover{
+        color: #ffffff;
+      }
+    }
+
+    &One{
+      padding: 0px 80px;
+      width: 50%;
+      &Quote{
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500px;
+        color: #645f5f;
+        margin: 0px;
+      }
+      &Heading{
+        color: #ffffff;
+        margin: 0px;
+        &Text{
+          font-family: 'Poppins', sans-serif;
+          font-size: 60px;
+          font-weight: 600px;
+          line-height: 68px;
+          margin: 0px;
+          color: #645f5f;
+        }
+      }
+    }
+  }
+  &Main{
+    height: 850px;
+    background-color: #e5e9e1;
+    padding-top: 90px;
+    &One{
+      padding: 100px 80px;
+      width: 50%;
+      float: left;
+    }
+    &Two{
+      width: 50%;
+      float: left;
+      &Text{
+        padding-top: 190px;
+        padding-bottom: 100px;
+        padding-right: 80px;
+        padding-left: 80px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 500px;
+        line-height: 35px;
+        margin: 0px;
+        color: #645f5f;
+      }
+      &Heading{
+        padding-left: 80px;
+        color: #ffffff;
+        margin: 0px;
+      }
+      &TextTwo{
+        padding-left: 80px;
+        width: 45%;
+        margin: 0px;
+        color: #645f5f;
+      }
+    }
+  }
+}
