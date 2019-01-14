@@ -6,8 +6,6 @@ import {NavLink} from "react-router-dom";
 // Logo Icon in navigation bar
 import crouton from './Images/crouton.png';
 import './Styles/navbar.css';
-import About from './About.js';
-import Team from './Team.js';
 
 const Navbar = () => {
   return (

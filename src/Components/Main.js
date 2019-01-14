@@ -1,5 +1,5 @@
 // Component that contains content Component that routes to content on homepage.
-import React, { Component } from 'react';
+import React from 'react';
 import Content from './Content.js';
 
 const Main = () => {

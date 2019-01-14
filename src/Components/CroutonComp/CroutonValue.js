@@ -1,5 +1,5 @@
 // Component that take heading and content as props and display on the page accordingly
-import React,{Component} from 'react';
+import React from 'react';
 import './styles.css';
 import PropTypes from 'prop-types'; // To mark proptyes reuired for this component.
 
