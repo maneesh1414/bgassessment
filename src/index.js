@@ -1,3 +1,5 @@
+// Start point of the rendering of website
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

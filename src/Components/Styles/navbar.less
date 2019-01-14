@@ -1,11 +1,17 @@
 // out: ./navbar.css, compress: true
 
+/* Laptops*/
+
 .Navbar {
   background-color: #ffaa81;
   font-family: 'Poppins', sans-serif;
   height: 80px;
    &HomeLink,&TeamLink,&AboutLink{
-     padding: 10px 30px;;
+     padding: 10px 30px;
+     outline: none;
+     &:hover {
+       opacity: 0.5;
+     }
    }
    &HomeLink{
      padding-left: 80px;
@@ -23,4 +29,24 @@
      font-weight: 600;
      color: #645f5f;
    }
+}
+
+/* For phones*/
+
+@media screen and (max-width: 650px) {
+  .Navbar{
+    height: 60px;
+    &HomeLink,&TeamLink,&AboutLink{
+      padding: 5px 15px;
+    }
+    &HomeLink{
+      padding-left: 40px;
+      &Img{
+        margin-top: 20px;
+      }
+    }
+    &LinkText{
+      font-size: 12px;
+    }
+  }
 }
