@@ -48,7 +48,8 @@ export default class Footer extends Component{
       });
     axios.post(url,body,{
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*', 
       }}).then(response => this.setState({name:"", email:"", message:"", statusText: "Submitted Successfully", showBanner: true, bannerStatus: 1}))
            .catch(error => this.setState({statusText: "Error Occured while submitting", showBanner: true, bannerStatus: 3}));
     } else {

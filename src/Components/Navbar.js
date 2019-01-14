@@ -10,9 +10,9 @@ import './Styles/navbar.css';
 const Navbar = () => {
   return (
     <div className="Navbar"> {/* Image link to home, aboutus and team links */}
-      <NavLink className="NavbarHomeLink" to="/"><img className="NavbarHomeLinkImg" src={crouton} alt="Crouton" width="80" height="20"/></NavLink>
-      <NavLink className="NavbarAboutLink" exact to="/About">/<span className="NavbarLinkText">About</span></NavLink>
-      <NavLink className="NavbarTeamLink" exact to="/Team">/<span className="NavbarLinkText">Our Team</span></NavLink>
+      <NavLink activeClassName="NavbarActive" className="NavbarHomeLink" to="/"><img className="NavbarHomeLinkImg" src={crouton} alt="Crouton" width="80" height="20"/></NavLink>
+      <NavLink activeClassName="NavbarActive" className="NavbarAboutLink" exact to="/About">/<span className="NavbarLinkText">About</span></NavLink>
+      <NavLink activeClassName="NavbarActive" className="NavbarTeamLink" exact to="/Team">/<span className="NavbarLinkText">Our Team</span></NavLink>
     </div>
   );
 };

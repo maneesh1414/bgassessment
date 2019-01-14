@@ -12,8 +12,8 @@ const Content = () => {
       <div className="ContentPart">
         <div className="ContentPartOne">
           <h3 className="ContentPartOneQuote">a complete creative agency</h3><br/>
-          <h1 className="ContentPartOneHeading">Crouton-</h1>
-          <p className="ContentPartOneHeadingText">Where learning never stops</p>
+          <h1 className="ContentPartOneHeading">Crouton -</h1>
+          <p className="ContentPartOneHeadingText">Where learning never stops.</p>
           {/* Link that routes to about us page*/}
           <Link className="ContentPartLink" to="/About">DISCOVER MORE <span className="ContentPartLinkSub"> &#8594; </span></Link>
         </div>
@@ -24,9 +24,9 @@ const Content = () => {
       <div className="ContentMain">
         <div className="ContentMainOne">
         {/* Components that take heading and content as props and style themselves accordingly on page*/}
-          <CroutonValue heading="Core Value 1" content="Etiam viverra consequat nibh quis elementum." />
-          <CroutonValue heading="Core Value 2" content="Mollis ac fringilla vitae, volutpat vitae enim." />
-          <CroutonValue heading="Core Value 3" content="Donec nec convallis nulla. Cras tortor libero." />
+          <CroutonValue heading="Core Value 1 -" content="Etiam viverra consequat nibh quis elementum." />
+          <CroutonValue heading="Core Value 2 -" content="Mollis ac fringilla vitae, volutpat vitae enim." />
+          <CroutonValue heading="Core Value 3 -" content="Donec nec convallis nulla. Cras tortor libero." />
         </div>
         {/* Right half or lowerpart of the content with cream background*/}
         <div className="ContentMainTwo">
