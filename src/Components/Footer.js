@@ -40,13 +40,14 @@ export default class Footer extends Component{
   submit(){
     if(this.state.name && this.state.email && this.state.message){
       const url = `https://ihs1nx5rt6.execute-api.us-east-1.amazonaws.com/crouton`;
+      const proxyURL = `https://cors-anywhere.herokuapp.com/`
       const body= JSON.stringify({
         "appID": "mr-6403074608",
         "name": this.state.name,
         "email": this.state.email,
         "message": this.state.message
       });
-    axios.post(url,body,{
+    axios.post(proxyURL + url,body,{
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*', 
