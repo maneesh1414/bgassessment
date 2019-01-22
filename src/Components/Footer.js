@@ -48,7 +48,7 @@ export default class Footer extends Component{
       });
     axios.post(url,body,{
       crossDomain : true,
-      'Access-Control-Allow-Origin': '*',       
+      'Access-Control-Allow-Origin': '*',
       headers: {
         'Content-Type': 'application/json',
       }}).then(response => this.setState({name:"", email:"", message:"", statusText: "Submitted Successfully", showBanner: true, bannerStatus: 1}))
