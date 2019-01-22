@@ -17,9 +17,9 @@ const Content = () => {
           {/* Link that routes to about us page*/}
           <Link className="ContentPartLink" to="/About">DISCOVER MORE <span className="ContentPartLinkSub"> &#8594; </span></Link>
         </div>
-        {/* Image floated on the page*/}
-        <img className="ContentPartImg" src={content} alt="ContentImg"/>
       </div>
+      {/* Image floated on the page*/}
+      <img className="ContentPartImg" src={content} alt="ContentImg"/>
       {/* Left half or top part of the content with cream background */}
       <div className="ContentMain">
         <div className="ContentMainOne">

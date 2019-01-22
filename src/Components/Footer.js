@@ -41,15 +41,16 @@ export default class Footer extends Component{
     if(this.state.name && this.state.email && this.state.message){
       const url = `https://ihs1nx5rt6.execute-api.us-east-1.amazonaws.com/crouton`;
       const body= JSON.stringify({
-        "appID": "mr-6403074608",
+        "appId": "mr-6403074608",
         "name": this.state.name,
         "email": this.state.email,
         "message": this.state.message
       });
     axios.post(url,body,{
+      crossDomain : true,
+      'Access-Control-Allow-Origin': '*',       
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*', 
       }}).then(response => this.setState({name:"", email:"", message:"", statusText: "Submitted Successfully", showBanner: true, bannerStatus: 1}))
            .catch(error => this.setState({statusText: "Error Occured while submitting", showBanner: true, bannerStatus: 3}));
     } else {
